@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="thumbnail">
+            <li><img src="img2.jpg" onclick="big('img2.jpg')" alt=""></li>
+            <li><img src="img3.jpg"  onclick="big('img3.jpg')" alt=""></li>
+            <li><img src="img4.jpg" onclick="big('img4.jpg')"  alt=""></li>
+        </div>
+        <div class="big-img">
+            <img src="./img1.jpg" class=".big" alt="">
+        </div>
+        <div class="content">
+            <p>&#x1F525;Lets Ride &#x1F525;</p>
+            <h1>Own your DREAM bike</h1>
+            <h5>Its not just riding,its flying</h5>
+        </div>
+    </div>
+</body>
+<script>
+    function big(img){
+        document.querySelector('.big').src=img;
+    }
+</script>
+</html>
